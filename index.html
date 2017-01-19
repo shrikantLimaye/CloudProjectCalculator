@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Angular Calculator</title>
+        <meta charset="utf-8" />
+        <link  href="main.css"  rel="stylesheet"/>
+    </head>
+    <body >
+        <h1> Calculator </h1>
+        <div ng-controller="myController">
+            Enter a Number here: 
+            <input type="number" ng-model ="number" />
+            Enter 2nd number here:
+            <input type="number" ng-model="number1" />
+            <div>
+                <p>Only the first input block calculates for X<sup>2</sup> and X<sup>3</sup></p>
+            <button ng-click="doSquare()">X<sup>2</sup></button>
+            <button ng-click="doCube()">X<sup>3</sup></button>
+            <button ng-click="doAdd()">Add</button>
+            <button ng-click="doSubtract()">Minus</button>
+            <button ng-click="doMultiply()">Multiply</button>
+            <button ng-click="doDivide()">Divide</button>
+            </div>
+            <div>
+                Answer: {{answer}}
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" ></script>
+        <script src="controller.js"></script>
+    </body>
+</html>

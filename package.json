@@ -1,0 +1,12 @@
+{
+"name": "bombasaAngular",
+"version": "1.0.0",
+"author": "Shrikant Limaye",
+"description": "A Calculator Project",
+"dependencies": {
+"express": "*"
+},
+"scripts": {
+"start": "node server.js"
+}
+}

@@ -1,0 +1,7 @@
+---
+# Application for a calculator app
+applications:
+- name: bombasaAngularcalculator
+  instances: 2
+  memory: 512MB
+  command: node server.js
